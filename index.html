@@ -61,7 +61,7 @@ footer .note{margin:0; color:var(--muted); font-size:14px}
 h2{color:#dbe7ff;text-transform:none;letter-spacing:.02em;font-size:20px;font-weight:750;background:linear-gradient(90deg,#60a5fa,#fbbf24);-webkit-background-clip:text;background-clip:text;color:transparent}
 .card{background:transparent;border:0;border-top:1px solid #16264f;border-radius:0;padding:16px 0 0}
 body::before{content:'';display:block;height:5px;background:#60a5fa;position:sticky;top:0;z-index:9}
-body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:repeating-linear-gradient(0deg, transparent 0 39px, #16264f 39px 40px)}
+background-image:repeating-linear-gradient(0deg, transparent 0 39px, #16264f 39px 40px);
 </style>
 </head>
 <body>
@@ -76,7 +76,7 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
 
 <section class="about" id="about">
   <h2>关于</h2>
-  <p>我大部分时间在做检索缓存的命中归因相关的事。 当前以博士阶段研究角色的方式推进项目。</p>
+  <p>我大部分时间在做检索缓存的命中归因相关的事。</p>
   <ul class="traits">
     <li>先讲为什么不用更简单的方案。</li>
     <li>每个决策都标出放弃了什么。</li>
@@ -89,20 +89,12 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
   <div class="grid two">
     <article class="card">
       <h3>在检索缓存的命中归因上的判定边界与失效条件</h3>
-      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>检索缓存的命中归因的判定依据与复核方式</h3>
-      <span class="status">持续跟进</span>
     </article>
     <article class="card">
       <h3>检索缓存的命中归因里容易误判的情形与反例</h3>
-      <span class="status">持续跟进</span>
-    </article>
-    <article class="card">
-      <h3>在推进的问题</h3>
-      <p>（检索缓存的命中归因场景）当检索缓存的命中归因出现提示词变化时，结论还站得住吗？用缓存命中与复用界定可接受的偏差范围。</p>
-      <span class="status">进行中</span>
     </article>
   </div>
 </section>
@@ -110,9 +102,6 @@ body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;back
 <section id="work">
   <h2>开源</h2>
   <ul class="repos">
-    <li><div class="name"><a href="https://github.com/isofosoh/cache_controlled_comparison_0dd21769" rel="noopener">cache_controlled_comparison_0dd21769</a></div>
-      <div class="desc">（检索缓存的命中归因场景）当检索缓存的命中归因出现提示词变化时，结论还站得住吗？用缓存命中与复用界定可接受的偏差范围。</div>
-    </li>
     <li><div class="name"><a href="https://github.com/isofosoh/cacheattrib" rel="noopener">cacheattrib</a></div>
       <div class="desc">从样本里推断检索缓存的命中归因应有的字段集合，逐字段检查存在性与类型，缺失项单独列出</div>
     </li>
